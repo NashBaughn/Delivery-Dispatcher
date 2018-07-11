@@ -11,12 +11,13 @@ Set up (UNIX):
 
 Env Varaibles:
 	1.) For various reason the code gets it database parameters from env variables
-		a.) Copy and paste the following into your .bash_profile. 
+		- Copy and paste the following into your .bash_profile. 
+			'''
 			export BMG_DATABASE_NAME="bmg_test_api"
 			export BMG_DATABASE_USERNAME="user"
 			export BMG_DATABASE_PASSWORD="user_password"
 			export BMG_RABBITMQ_QUEUE_NAME="BMG_orders"
-
+			'''
 Postgres:
 	bmg-net uses postgres as a local sql database. 
 	Installation (with command prompt):
