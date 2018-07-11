@@ -1,3 +1,9 @@
+console.log("database name: "+process.env.BMG_DATABASE_NAME)
+console.log("database username: "+process.env.BMG_DATABASE_USERNAME)
+console.log("database password: "+process.env.BMG_DATABASE_PASSWORD)
+console.log("rabbitmq queuename: "+process.env.BMG_RABBITMQ_QUEUE_NAME)
+
+
 const express =  require('express');
 const port = process.env.BMG_PORT || 3000;
 const host = process.env.BMG_HOST || 'localhost';

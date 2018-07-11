@@ -1,9 +1,11 @@
 var amqp = require('amqplib/callback_api');
 
+
 exports.push_to_queue = (orderId) => {
 	amqp.connect('amqp://localhost', function(err, conn) {
-		conn.createChannel(function(err, ch) {
-			var q = 'BMG_orders';	
+		conn.createChannel(function(err, ch) {	
+			var q = process.env.BMG_RABBITMQ_QUEUE_NAME;
+			console.log(process.env.BMG_DATABASE_NAME)
 			ch.assertQueue(q ,{durable: false});
 			ch.sendToQueue(q, new Buffer(orderId.toString()), {persistent: true});
 			console.log("pushed to rabbit!")
@@ -20,7 +22,7 @@ exports.pull_from_queue = () => {
 			if (err) { reject(err) }
 			conn.createChannel(function(err, ch) {
 				if (err) { reject(err) }
-				var q = 'BMG_orders'
+				var q = process.env.BMG_RABBITMQ_QUEUE_NAME;
 				ch.assertQueue(q, {durable: false});
 				ch.prefetch(1);
 				ch.consume(q, function(msg) {
@@ -41,7 +43,7 @@ exports.start_dispatcher = () => {
 	console.log("starting dispatcher")
 	amqp.connect('amqp://localhost', function(err, conn) {
 		conn.createChannel(function(err, ch) {
-			var q = 'BMG_orders'
+			var q = process.env.BMG_RABBITMQ_QUEUE_NAME;
 			ch.assertQueue(q, {durable: false});
 			ch.prefetch(1);
 			ch.consume(q, function(msg) {
