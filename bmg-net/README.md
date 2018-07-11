@@ -4,10 +4,10 @@ is completed with RabbitMq, however, the set of orders for a delivery is
 not just defined by arrival, but also location (shortest path). 
 
 Set up (UNIX):
-	1.) clone repo  - 'git clone https://github.com/NashBaughn/Delivery-Dispatcher.git'
-	2.) install npm - 'cd Delivery-Dispatcher && npm install'
-	3.) start bmg-net - 'npm run-script dev'
-	4.) Error! There's more!
+	1. clone repo  - 'git clone https://github.com/NashBaughn/Delivery-Dispatcher.git'
+	2. install npm - 'cd Delivery-Dispatcher && npm install'
+	3. start bmg-net - 'npm run-script dev'
+	4. Error! There's more!
 
 Env Varaibles:
 	1.) For various reason the code gets it database parameters from env variables
