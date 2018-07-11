@@ -11,13 +11,13 @@ not just defined by arrival, but also location (shortest path).
 
 ## Env Varaibles:<br/>
 	1.) For various reason the code gets it database parameters from env variables<br/>
-		a.) Copy and paste the following into your .bash_profile. <br/>
-			'''
+		- Copy and paste the following into your .bash_profile. <br/>
+		
 			export BMG_DATABASE_NAME="bmg_test_api"
 			export BMG_DATABASE_USERNAME="user"
 			export BMG_DATABASE_PASSWORD="user_password"
 			export BMG_RABBITMQ_QUEUE_NAME="BMG_orders"
-			'''
+		
 ## Postgres:<br/>
 	bmg-net uses postgres as a local sql database.<br/>
 	Installation (with command prompt):<br/>
