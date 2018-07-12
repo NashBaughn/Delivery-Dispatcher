@@ -1,6 +1,5 @@
 var amqp = require('amqplib/callback_api');
 
-
 exports.push_to_queue = (orderId) => {
 	amqp.connect('amqp://localhost', function(err, conn) {
 		conn.createChannel(function(err, ch) {	
