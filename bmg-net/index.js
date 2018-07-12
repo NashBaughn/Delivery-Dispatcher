@@ -11,8 +11,8 @@ const bodyParser = require('body-parser');
 //const port = require('./port');
 
 const app  = express();
-const bmgApi = require('./bmg-api');
-const bmgDispatcher = require('./bmg-dispatcher');
+const bmgApi = require('./api');
+const bmgDispatcher = require('./dispatcher');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

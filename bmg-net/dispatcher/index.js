@@ -1,5 +1,5 @@
 const express  = require('express');
-const db 	   = require('../bmg-database/db');
+const db 	   = require('../database/db');
 const app      = express();
 const dispatcher = require('./services/dispatchService.js');
 

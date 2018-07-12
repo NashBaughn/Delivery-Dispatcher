@@ -1,5 +1,5 @@
 'use strict';
-var Orders = require('../../bmg-database/schemas').orders;
+var Orders = require('../../database/schemas').orders;
 //var Drivers = require('../database/schemas').drivers;
 var Sequelize = require('sequelize');
 var Rabbit = require('./rabbitController');

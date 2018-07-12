@@ -1,6 +1,6 @@
 const express  = require('express');
 const routes   = require('./routes/routes.js');
-const db 	   = require('../bmg-database/db');
+const db 	   = require('../database/db');
 const app      = express();
 const Rabbit   = require('./controllers/rabbitController.js');
 
