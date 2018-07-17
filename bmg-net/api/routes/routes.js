@@ -8,4 +8,10 @@ module.exports = function(app) {
 
 	app.route('/nextorder')
 		.post(controller.readFromQueue);
+
+	app.route('/currentdelivery')
+		.get(controller.currentDelivery);
+
+	app.route('/orderstatus')
+		.post();
 };
