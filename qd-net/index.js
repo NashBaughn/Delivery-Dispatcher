@@ -1,6 +1,6 @@
 const onStartInfo = require('./utils/envInfo');
 const express =  require('express');
-const port = process.env.DQ_PORT || 3000;
+const port = process.env.QD_PORT || 3000;
 const host = process.env.QD_HOST || 'localhost';
 const bodyParser = require('body-parser');
 const app  = express();
