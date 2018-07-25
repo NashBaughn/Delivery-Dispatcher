@@ -1,8 +1,8 @@
 'use strict';
 
-let connection = require('./connection')
-let schemas = require('./schemas')
-let setRelations = require('./relations')
+let connection = require('./connection');
+let schemas = require('./schemas');
+let setRelations = require('./relations');
 
 let db = {
 	init: () => {
@@ -21,4 +21,4 @@ let db = {
 	}
 };
 
-module.exports = Object.assign(db, schemas)
+module.exports = Object.assign(db, schemas);

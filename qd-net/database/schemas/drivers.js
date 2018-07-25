@@ -12,6 +12,15 @@ const drivers = connection.define('drivers',  {
 	dl: {
 		type: Sequelize.STRING,
 	},
+	firstname: {
+		type: Sequelize.STRING,
+	},
+	lastname: {
+		type: Sequelize.STRING,
+	},
+	car: {
+		type: Sequelize.STRING,
+	},
 	status: {
 		type: Sequelize.STRING,
 		defaultValue: 'off'
@@ -27,4 +36,4 @@ const drivers = connection.define('drivers',  {
 });
 
 
-module.exports.drivers = drivers;
+module.exports = drivers;

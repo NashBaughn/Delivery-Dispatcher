@@ -1,0 +1,12 @@
+{
+	"hubs":{
+		"santa cruz" : {
+			"queue_name" : "scz",
+			"queue_host" : "amqp://localhost"
+ 		},
+ 		"oakland" : {
+ 			"queue_name" : "oak",
+ 			"queue_host" : "amqp://localhost"
+ 		}
+	}
+}
