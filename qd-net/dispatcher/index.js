@@ -1,5 +1,5 @@
 const config   = require('./config.json');
-const dispatcher   = require('./services/dispatcherClass');
+const dispatcher   = require('./services/dispatcherModule');
 
 // start up dispatchers
 for (var city in config.hubs) {
